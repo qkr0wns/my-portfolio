@@ -14,8 +14,8 @@ body {
 
 header {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-flow: column wrap;
+    align-items: center;
     font-weight: bold;
 }
 
@@ -47,6 +47,16 @@ a:hover {
 
 @media screen and (min-width: 768px) {
     header {
+        flex-flow: row wrap;
         justify-content: space-between;
     }
+    h1 {
+        color: red;
+    }
+}
+@media screen and (min-width: 992px) {
+    h1{
+        color: violet;
+    }
+
 }

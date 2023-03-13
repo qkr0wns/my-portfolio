@@ -1,7 +1,7 @@
 /* ---------- Global ---------- */
 :root {
     --cyan: #45C8BC;
-    --grey: #656B70;
+    --grey: #34383a;
     --offwhite: #F1F1EC;
     --orange: #E45E40;
     --yellow: #FDD069;
@@ -52,6 +52,7 @@ a:hover {
     header {
         flex-direction: row;
         justify-content: space-between;
+        align-items: baseline;
     }
     footer {
         flex-direction: row-reverse;

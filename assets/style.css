@@ -1,0 +1,34 @@
+:root {
+    --cyan: #45C8BC;
+    --grey: #656B70;
+    --offwhite: #F1F1EC;
+    --orange: #E45E40;
+    --yellow: #FDD069;
+}
+
+body {
+    background-color: var(--grey);
+    color: var(--offwhite);
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+}
+
+nav a {
+    margin: 1em;
+    color: var(--yellow);
+    text-decoration: none;
+    text-transform: lowercase;
+}

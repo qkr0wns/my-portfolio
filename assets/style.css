@@ -16,8 +16,16 @@ header {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    align-items: center;
-    padding-top: 20px;
+    font-weight: bold;
+}
+
+#wordmark {
+    color: var(--cyan);
+    font-size: 2.5em;
+}
+
+#wordmark > span {
+    color: var(--orange);
 }
 
 nav ul {
@@ -27,8 +35,18 @@ nav ul {
 }
 
 nav a {
-    margin: 1em;
+    margin: 0 1em 0 1em;
     color: var(--yellow);
     text-decoration: none;
     text-transform: lowercase;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        justify-content: space-between;
+    }
 }

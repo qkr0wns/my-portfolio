@@ -1,3 +1,4 @@
+/* ---------- Global ---------- */
 :root {
     --cyan: #45C8BC;
     --grey: #656B70;
@@ -12,7 +13,8 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-header {
+/* ---------- Header & Footer ---------- */
+header, footer {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -31,6 +33,7 @@ header {
 nav ul {
     display: flex;
     flex-flow: row nowrap;
+    padding-left: 0px;
     list-style-type: none;
 }
 
@@ -47,7 +50,11 @@ a:hover {
 
 @media screen and (min-width: 768px) {
     header {
-        flex-flow: row wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer {
+        flex-direction: row-reverse;
         justify-content: space-between;
     }
     h1 {

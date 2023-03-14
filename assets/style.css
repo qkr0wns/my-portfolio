@@ -1,7 +1,7 @@
 /* ---------- Global ---------- */
 :root {
     --cyan: #45C8BC;
-    --grey: #34383a;
+    --grey: #34383A;
     --offwhite: #F1F1EC;
     --orange: #E45E40;
     --yellow: #FDD069;
@@ -14,7 +14,8 @@ body {
 }
 
 /* ---------- Header & Footer ---------- */
-header, footer {
+header,
+footer {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -26,7 +27,7 @@ header, footer {
     font-size: 2.5em;
 }
 
-#wordmark > span {
+#wordmark>span {
     color: var(--orange);
 }
 
@@ -38,7 +39,7 @@ nav ul {
 }
 
 nav a {
-    margin: 0 1em 0 1em;
+    margin: 0 1.2em 0 1.2em;
     color: var(--yellow);
     text-decoration: none;
     text-transform: lowercase;
@@ -48,22 +49,49 @@ a:hover {
     text-decoration: underline;
 }
 
+/* ---------- Main ---------- */
+/* ----- About Me Section----- */
+#about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+#about-me>img {
+    width: 400px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+
+/* ----------Responsive Design ---------- */
 @media screen and (min-width: 768px) {
     header {
         flex-direction: row;
         justify-content: space-between;
         align-items: baseline;
     }
+
     footer {
         flex-direction: row-reverse;
         justify-content: space-between;
     }
+
     h1 {
         color: red;
     }
 }
+
 @media screen and (min-width: 992px) {
-    h1{
+    #about-me {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    h1 {
         color: violet;
     }
 

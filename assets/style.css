@@ -50,6 +50,10 @@ a:hover {
 }
 
 /* ---------- Main ---------- */
+main {
+        margin: 0 3rem 0 3rem;
+    }
+
 /* ----- About Me Section----- */
 #about-me {
     display: flex;
@@ -60,7 +64,7 @@ a:hover {
 }
 
 #about-me>img {
-    width: 400px;
+    width: 320px;
 }
 
 h1 {
@@ -84,6 +88,23 @@ h1 {
     outline: medium dashed var(--offwhite);
 }
 
+/* ----- My Work Section */
+
+h2 {
+    color: var(--yellow);
+    text-transform: lowercase;
+}
+
+#my-work img {
+    border-left: medium solid var(--orange);
+    border-right: medium solid var(--cyan);
+}
+
+#regular-projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* ----------Responsive Design ---------- */
 @media screen and (min-width: 768px) {
@@ -93,9 +114,18 @@ h1 {
         align-items: baseline;
     }
 
+    main {
+        margin: 0 4rem 0 4rem;
+    }
+
     footer {
         flex-direction: row-reverse;
         justify-content: space-between;
+    }
+
+    #regular-projects-container {
+        display: flex;
+        flex-flow: row wrap;
     }
 
     h1 {
@@ -104,9 +134,16 @@ h1 {
 }
 
 @media screen and (min-width: 992px) {
+    main {
+        margin: 0 8rem 0 8rem;
+    }
+
     #about-me {
         flex-direction: row;
-        justify-content: space-between;
+    }
+
+    #about-me img {
+        margin-right: 8rem;
     }
 
     h1 {

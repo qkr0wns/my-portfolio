@@ -12,67 +12,81 @@
 
 <body>
     <header>
-        <div id="wordmark">PETER<span>PARK</span></div>
+        <span id="wordmark" class="text-cyan">PETER<span class="text-orange">PARK</span></span>
         <nav>
             <ul>
-                <li><a href="#about-me">My&nbsp;Projects</a></li>
-                <li><a href="#my-work">My&nbsp;Experience</a></li>
-                <li><a href="#contact-me">Contact&nbsp;Me</a></li>
+                <li><a href="#projects-section" class="text-yellow-accent">My&nbsp;Projects</a></li>
+                <li><a href="#experience-section" class="text-yellow-accent">My&nbsp;Experience</a></li>
+                <li><a href="#contact-section" class="text-yellow-accent">Contact&nbsp;Me</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="about-me">
+        <section id="intro-section">
             <img src="./assets/images/avatar.png" alt="Peter Park's avatar">
             <div>
-                <h1>Hi. I'm Peter.</h1>
-                <p>I'm a <span>full stack developer</span> with a professional background in creating digestible
-                    written
-                    content&mdash;from <em>technical
-                        documentation</em> to <em>SEO-friendly marketing copy</em>.</p>
-                <nav>
-                    <a id="view-work" href="#my-work">Check&nbsp;Out&nbsp;My&nbsp;Projects</a>
-                    <a id="view-work" href="#my-work">Learn&nbsp;More&nbsp;About&nbsp;Me</a>
-                </nav>
+                <h1>Hi.&nbsp;I'm&nbsp;Peter.</h1>
+                <p>I am a <span class="text-cyan">full stack web developer</span> and <span
+                        class="text-orange">technical documentation specialist</span> with a knack for producing clean,
+                    work.</p>
             </div>
         </section>
-        <section id="my-work">
-            <div class="projects-container">
-                <h2>Featured Projects</h2>
-                <figure class="project" id="highlight">
-                    <figcaption>Highlight project</figcaption>
+        <section id="projects-section">
+            <h2 class="text-yellow-accent">Featured&nbsp;Projects</h2>
+            <div id="highlight-container" class="projects-container">
+                <figure id="highlight">
+                    <figcaption>Highlight Project</figcaption>
                     <img alt="placeholder" src="./assets/images/black-cellphone-floats-above-pink-background.jpg">
                 </figure>
             </div>
             <div class="projects-container">
-                <figure class="project">
-                    <figcaption>Smaller project 1</figcaption>
+                <figure>
+                    <figcaption>Project 1</figcaption>
                     <img alt="placeholder" src="./assets/images/office-desk-with-hands-taking-notes.jpg">
                 </figure>
-                <figure class="project">
-                    <figcaption>Smaller project 2</figcaption>
+                <figure>
+                    <figcaption>Project 2</figcaption>
                     <img alt="placeholder" src="./assets/images/store-owners-hands-typing-away.jpg">
                 </figure>
-                <figure class="project">
-                    <figcaption>Smaller project 3</figcaption>
+                <figure>
+                    <figcaption>Project 3</figcaption>
                     <img alt="placeholder" src="./assets/images/students-learning-in-class-room.jpg">
                 </figure>
-                <figure class="project">
-                    <figcaption>Smaller project 4</figcaption>
+                <figure>
+                    <figcaption>Project 4</figcaption>
                     <img alt="placeholder" src="./assets/images/view-from-above-as-person-sits-at-white-desktop.jpg">
                 </figure>
             </div>
         </section>
+        <section id="experience-section">
+            <h2 class="text-yellow-accent">My&nbsp;Experience</h2>
+            <h3>Full Stack Web Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, cupiditate dolore at consectetur
+                nesciunt numquam delectus! Eligendi illo facilis, ut ab dolor provident similique ducimus culpa odio
+                commodi autem explicabo.</p>
+            <h3>Technical Writing</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, expedita, iusto exercitationem amet
+                officiis cum cupiditate temporibus debitis consectetur similique quod nemo natus. Commodi ipsam
+                veritatis sunt, quibusdam cupiditate quis.</p>
+            <h3>Search Engine Marketing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta temporibus cum nostrum laudantium autem
+                inventore impedit hic consectetur magnam vitae officia maiores rem, explicabo consequuntur dolores illo!
+                Voluptatum, voluptates facere?</p>
+        </section>
     </main>
     <footer>
-        <div id="wordmark">PETER<span>PARK</span></div>
-        <nav>
+        <h4 class="text-yellow-accent">Let's connect!</h4>
+        <nav id="contact-section">
             <ul>
-                <li><a href="https://github.com/qkr0wns" target="_blank">GitHub</a></li>
-                <li><a href="https://linkedin.com/in/peteryoungjunpark">LinkedIn</a></li>
-                <li></li>
+                <li><a href="https://github.com/qkr0wns" target="_blank"><img
+                            src="./assets/images/github-mark-white.png" alt="GitHub icon"></a></li>
+                <li><a href=mailto:"peterjpark@pm.me" target="_blank"><img src=./assets/images/email.png
+                            alt="Email icon"></a></li>
+                <li><a href="https://linkedin.com/in/peteryoungjunpark" target="_blank"><img
+                            src=./assets/images/linkedin.png alt="LinkedIn icon"></a></li>
             </ul>
         </nav>
+        <span id="wordmark" class="text-cyan">PETER<span class="text-orange">PARK</span></span>
     </footer>
 </body>
 

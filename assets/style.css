@@ -1,4 +1,4 @@
-/* ---------- Global ---------- */
+ /* ---------- Global ---------- */
 :root {
     --cyan: #45C8BC;
     --grey: #34383A;
@@ -78,7 +78,8 @@ h1 {
 #view-work {
     background-color: var(--yellow);
     padding: 10px;
-    color: black;
+    color: var(--grey);
+    border-radius: 3%;
     font-weight: bold;
     text-decoration: none;
     line-height: 5rem;
@@ -95,15 +96,23 @@ h2 {
     text-transform: lowercase;
 }
 
+#my-work {
+    display: flex;
+    flex-direction: column;
+}
+
 #my-work img {
     border-left: medium solid var(--orange);
     border-right: medium solid var(--cyan);
+    width: 300px;
 }
-
-#regular-projects-container {
+.projects-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.project {
 }
 
 /* ----------Responsive Design ---------- */
@@ -123,7 +132,7 @@ h2 {
         justify-content: space-between;
     }
 
-    #regular-projects-container {
+    .projects-container {
         display: flex;
         flex-flow: row wrap;
     }

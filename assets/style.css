@@ -56,7 +56,7 @@
      border: 1px dashed black;
  }
 
- #wordmark {
+ .wordmark {
      margin: 15px;
      font-size: 2.5em;
  }
@@ -66,17 +66,19 @@
  }
 
  footer img:hover {
-    filter: drop-shadow(3px 3px var(--cyan))
+     filter: drop-shadow(3px 3px var(--cyan))
  }
 
  /* 📍 Navigation 📍 */
- nav>ul {
+ nav>ul,
+ #socials-list {
      display: flex;
      padding-left: 0px;
      list-style-type: none;
  }
 
- nav a {
+ nav a,
+ #socials-list a {
      margin: 0 1em 0 1em;
  }
 
@@ -109,26 +111,26 @@
 
  /* 💻 My Projects Section 👨‍💻 */
  figure {
-    margin: 0;
-}
+     margin: 0;
+ }
 
-figcaption {
-   position: relative;
-   top: 1.75em;
-   padding: 0 1.1em 0 1.1em;
-   text-align: end;
-   background-color: rgba(0, 0, 0, 0.6);
-}
+ figcaption {
+     position: relative;
+     top: 1.75em;
+     padding: 0 1.1em 0 1.1em;
+     text-align: end;
+     background-color: rgba(0, 0, 0, 0.7);
+ }
 
-#projects-section img {
-    width: 400px;
-}
+ #projects-section img {
+     width: 400px;
+ }
 
-figure:hover {
-    filter: saturate(200%);
-}
+ figure:hover {
+     filter: saturate(200%);
+ }
 
-figure img:hover {
+ figure img:hover {
      outline: medium solid var(--cyan);
  }
 
@@ -187,7 +189,7 @@ figure img:hover {
      }
 
      #projects-grid {
-        margin: auto 3em auto 3em;
+         margin: auto 3em auto 3em;
      }
 
      #projects-grid {

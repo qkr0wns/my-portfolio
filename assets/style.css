@@ -22,10 +22,6 @@
      align-items: center;
  }
 
- h3 {
-     margin-bottom: 0.2em;
- }
-
  img {
      box-sizing: border-box;
  }
@@ -104,49 +100,49 @@
      line-height: 1.2em;
  }
 
- /* 💻 My Projects Section 👨‍💻 */
- #projects-section {
-     /* TODO: Fix this */
-     display: flex;
-     flex-flow: column wrap;
- }
-
- #projects-section img {
-     outline: medium solid var(--cyan);
-     width: 500px;
-     filter: invert(35%);
- }
-
- #projects-section img:hover {
-     filter: none;
- }
-
- .projects-container {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
- }
-
  h2 {
      font-size: 1.75em;
      padding-top: 0.5em;
      border-top: dashed black;
  }
 
- figure {
-     margin: 0.25em;
+ /* 💻 My Projects Section 👨‍💻 */
+
+ /* TODO: On mobile display flex column. On widescreen, display grid so no orphans. */
+ #projects-section {
+     /* TODO: Fix this */
+     display: flex;
+     flex-direction: column;
  }
+
+ #projects-section img {
+     outline: medium solid var(--orange);
+     width: 400px;
+
+ }
+
+ #projects-section img:hover {
+     filter: invert(35%);
+ }
+
+figure {
+    margin: 0;
+}
 
  figcaption {
      position: relative;
      top: 2em;
      text-align: center;
-     backdrop-filter: blur(50px);
+     backdrop-filter: blur(70px);
      color: var(--grey);
      font-weight: bolder;
  }
 
  /* 📋 Experience Section 📋 */
+ h3 {
+     margin-bottom: 0.2em;
+ }
+
  #experience-section>a {
      margin-top: 1.25em;
      font-size: 1.25em;
@@ -195,10 +191,10 @@
          margin-right: 8rem;
      }
 
-     /* .projects-container {
-         display: flex;
-         flex-flow: row wrap;
-     } */
+     #projects-section>div {
+        flex-wrap: wrap;
+        justify-content: center;
+     }
 
      #experience-section>p,
      #contact-section>p {

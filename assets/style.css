@@ -15,6 +15,13 @@
      font-family: 'Inter', sans-serif;
  }
 
+ section,
+ .widescreenify {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
  a:hover {
      color: var(--cyan);
  }
@@ -42,12 +49,9 @@
  header,
  footer {
      padding: 1em;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
      background-color: var(--darker);
      font-weight: bold;
-     border: 0.5px dashed black;
+     border: 1px dashed black;
  }
 
  #wordmark {
@@ -77,13 +81,11 @@
  /* 📃 Main 📜 */
  main {
      margin: auto;
+     padding: 0 1em 0 1em;
  }
 
  section {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     margin: 5em 1em 5em 1em;
+     margin: 6em auto 6em auto;
      line-height: 1.5em;
  }
 
@@ -140,13 +142,6 @@
      font-weight: bolder;
  }
 
- #experience-section>div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
- }
-
  /* 💪 Responsive Design 🪩 */
  @media screen and (min-width: 768px) {
      main {
@@ -154,18 +149,17 @@
      }
 
      header {
-        border-right: 2px solid var(--cyan);
+         border-right: 2px solid var(--cyan);
      }
-    
+
      footer {
-        border-left: 2px solid var(--orange);
+         border-left: 2px solid var(--orange);
      }
  }
 
  @media screen and (min-width: 992px) {
 
-     header,
-     footer {
+     .widescreenify {
          flex-direction: row;
          justify-content: space-between;
          align-items: baseline;
@@ -191,10 +185,10 @@
          margin-right: 8rem;
      }
 
-     .projects-container {
+     /* .projects-container {
          display: flex;
          flex-flow: row wrap;
-     }
+     } */
 
      #experience-section>p {
          margin: 0.5em;

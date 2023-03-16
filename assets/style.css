@@ -58,7 +58,7 @@
  }
 
  nav a {
-     margin: 0 1.2em 0 1.2em;
+     margin: 0 100% 0 100%;
  }
 
  a:hover {
@@ -90,14 +90,14 @@
 
  /* 💻 My Projects Section 👨‍💻 */
  #projects-section {
+    /* TODO: Fix this */
      display: flex;
      flex-flow: column wrap;
-     max-width: 2000px;
  }
 
  #projects-section img {
      outline: medium solid var(--cyan);
-     width: 300px;
+     width: 500px;
      filter: invert(35%);
  }
 

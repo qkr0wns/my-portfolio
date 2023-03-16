@@ -115,13 +115,19 @@
 figcaption {
    position: relative;
    top: 1.75em;
-   text-indent: 5%;
-   background-color: rgba(0, 0, 0, 0.65);
+   padding: 0 1.1em 0 1.1em;
+   text-align: end;
+   background-color: rgba(0, 0, 0, 0.6);
 }
 
 #projects-section img {
     width: 400px;
 }
+
+figure:hover {
+    filter: saturate(200%);
+}
+
 figure img:hover {
      outline: medium solid var(--cyan);
  }
@@ -181,6 +187,10 @@ figure img:hover {
      }
 
      #projects-grid {
+        margin: auto 3em auto 3em;
+     }
+
+     #projects-grid {
          display: grid;
          gap: 1em;
          grid-template: auto / repeat(3, 1fr);
@@ -197,9 +207,8 @@ figure img:hover {
          object-fit: cover;
      }
 
-     #projects-grid,
      #experience-section>p,
      #contact-section>p {
-         margin: 0.5em;
+         margin-left: 0.5em;
      }
  }

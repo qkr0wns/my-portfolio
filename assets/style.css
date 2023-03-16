@@ -187,7 +187,8 @@
      #intro-section img {
          margin-right: 8em;
      }
-
+  
+     /* Flexbox column becomes grid on wider viewports to better manage layout. */
      #projects-grid {
          margin: auto 3em auto 3em;
      }
